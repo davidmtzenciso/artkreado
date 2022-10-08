@@ -1,4 +1,4 @@
-package model;
+package com.elatusdev.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

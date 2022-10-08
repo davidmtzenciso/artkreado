@@ -1,6 +1,6 @@
-package repository;
+package com.elatusdev.repository;
 
-import model.Category;
+import com.elatusdev.model.Category;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 

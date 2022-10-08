@@ -1,4 +1,4 @@
-package util;
+package com.elatusdev.util;
 
 import org.springframework.stereotype.Component;
 

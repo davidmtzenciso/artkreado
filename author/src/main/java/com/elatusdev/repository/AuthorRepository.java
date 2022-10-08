@@ -1,6 +1,6 @@
-package repository;
+package com.elatusdev.repository;
 
-import model.Author;
+import com.elatusdev.model.Author;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 

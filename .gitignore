@@ -24,3 +24,7 @@ hs_err_pid*
 
 # ide #
 .idea
+
+# targets #
+
+*/target

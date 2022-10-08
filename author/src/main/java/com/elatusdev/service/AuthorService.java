@@ -1,11 +1,11 @@
-package service;
+package com.elatusdev.service;
 
-import exception.EntityNotFoundException;
-import model.Author;
+import com.elatusdev.exception.EntityNotFoundException;
+import com.elatusdev.model.Author;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repository.AuthorRepository;
-import util.ErrorMsg;
+import com.elatusdev.repository.AuthorRepository;
+import com.elatusdev.util.ErrorMsg;
 
 import java.util.Optional;
 
