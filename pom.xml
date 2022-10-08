@@ -19,7 +19,6 @@
         <module>author</module>
         <module>work</module>
         <module>shopper</module>
-        <module>config</module>
     </modules>
 
     <properties>
