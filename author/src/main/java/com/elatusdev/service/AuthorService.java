@@ -2,6 +2,7 @@ package com.elatusdev.service;
 
 import com.elatusdev.exception.EntityNotFoundException;
 import com.elatusdev.model.Author;
+import com.elatusdev.model.Category;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.elatusdev.repository.AuthorRepository;
@@ -26,4 +27,21 @@ public class AuthorService {
             throw new EntityNotFoundException(errorMsg.getEntityNotFoundMsg("Author", name));
         }
     }
+
+    public Author create(Long authorId, String name, Category category, String about){
+        Author author = new Author(authorId,name,category,about);
+        return repo.insert(author);
+    }
+
+    public Author update(Long authorId, String name, Category category, String about){
+        Author author = new Author(authorId,name,category,about);
+        return repo.save(author);
+    }
+
+    public Author remove(String name){
+        Optional<Author> removed = repo.findByName(name);
+        removed.ifPresent((author)->repo.delete(author));
+        return removed.get();
+    }
+
 }
